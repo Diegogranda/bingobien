@@ -36,11 +36,11 @@ import java.util.Random;
         public void glista() {
             Random rd = new Random();
             for (int i = 0; i < 5; i++) {
-                this.Lb.add(rd.nextInt(15));
-                this.Li.add(rd.nextInt(15) + 15);
-                this.Ln.add(rd.nextInt(15) + 30);
-                this.Lg.add(rd.nextInt(15) + 45);
-                this.Lo.add(rd.nextInt(15) + 60);
+                this.Lb.add(rd.nextInt(20));
+                this.Li.add(rd.nextInt(20) + 20);
+                this.Ln.add(rd.nextInt(20) + 40);
+                this.Lg.add(rd.nextInt(20) + 60);
+                this.Lo.add(rd.nextInt(20) + 80);
             }
         }
 
@@ -56,25 +56,25 @@ import java.util.Random;
 
             String bola1 = bolas[rd.nextInt(5)];
 
-            int numero = rd.nextInt(15);
+            int numero = rd.nextInt(20);
             switch (bola1) {
                 case "B":
                     this.xencartilla(Lb, numero);
                     break;
                 case "I":
-                    numero += 15;
+                    numero += 20;
                     this.xencartilla(Li, numero);
                     break;
                 case "N":
-                    numero += 30;
+                    numero += 40;
                     this.xencartilla(Ln, numero);
                     break;
                 case "G":
-                    numero += 45;
+                    numero += 60;
                     this.xencartilla(Lg, numero);
                     break;
                 case "O":
-                    numero += 60;
+                    numero += 80;
                     this.xencartilla(Lo, numero);
                     break;
             }
